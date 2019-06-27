@@ -1,0 +1,1 @@
+<!-- This is a readme file for a website I made about simulation theory. P.S. We are All sims -->

@@ -1,0 +1,331 @@
+ @import "css/styles.css"
+     @charset "UTF-8";
+     
+ {}
+h1 {
+    color: darkseagreen;
+    font-family: monospace;
+
+}
+
+h3 {
+    color: darkseagreen;
+    font-family: monospace;
+
+}
+
+h4 {
+    color: darkseagreen;
+    font-family: monospace;
+    font-weight: 400;
+}
+
+simnav {
+    flex: inline-block;
+    flex-wrap: wrap;
+    background: floralwhite;
+    
+}
+
+
+.articles
+{
+    font-family: monospace;
+    color: darkseagreen;
+    padding: 4px;
+}
+
+body {
+    background-color: azure;
+    align-content: flex-end;
+}
+
+p {
+    color:darkseagreen;
+    font-family: monospace;
+}
+
+.ptxt {
+    color: lightpink;
+    background: floralwhite;
+    width: 300px;
+    border: 15px solid chartreuse;
+    padding: 50px;
+    margin: 20px;
+    font-family: monospace;
+    font-weight: 300;
+    font-size-adjust: auto;
+}
+
+
+/********* FLEX CONTAINERS BEGIN **********/
+
+.simnav {
+    display: inline-flex;
+    color: azure;
+    font-family: monospace;
+    column-width: 80%;
+    background:floralwhite;
+    z-index: 200;
+    border: solid 4px lightpink;
+    justify-content: center space-between;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+
+
+
+/* Begin Link color Rules */
+a {
+    font-family: monospace;
+}
+
+/* unvisited link */
+a:link {
+  color: darkseagreen;
+}
+
+/* visited link */
+a:visited {
+  color: chartreuse;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightpink;
+}
+
+/* selected link */
+a:active {
+  color: chartreuse;
+}
+
+/*! end a rules */
+
+.container {
+    padding: 30px;
+    font-family: monospace;
+    font-weight: 500;
+    align-content: center;
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+a:hover {
+  color: lightpink;
+}
+
+head {
+    padding: 5px;
+    display: flex;
+    align-content: flex-end;
+    position: sticky;
+    border-top: 10px;
+    
+}
+
+.header {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: chartreuse;
+    color:darkseagreen;
+    text-align: right;
+    background: floralwhite;
+    position: absolute; 
+    z-index: 5;
+    
+    padding: 12px 4px 4px 4px;
+    width: 40%;
+    margin: 0;
+}
+
+.footersocial {
+    text-align: left;
+    z-index: 2000;
+    font-family: monospace;
+    border: 2px solid lightpink;
+    border-collapse: collapse;
+    width: 20%;
+    border-radius: 25px;
+}
+
+footer {
+    font-family: monospace;
+    color: darkseagreen;
+    justify-content: flex-start;
+}
+
+
+wrap {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    align-items: center;
+    border: 2px solid chartreuse;
+    border-radius: 25px;
+}
+
+.headshot {
+    display:inline-block;
+    background-size: contain;
+    box-shadow: darkseagreen;
+    width: 30%;
+    padding: 2px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Begin Media Queries */
+@media {
+    /* Navbar links */
+.simnav {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+    @media only screen and (max-width: 600px)
+    
+    {
+  body {
+    background-color: azure;
+    margin: auto;
+    display: flex;
+  }
+}
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*************************
+Media Queries
+*************************/
+
+@media only screen and (min-width: 480px) {
+
+  simnav {
+    float: left;
+    width: 80%;
+    flex: auto;
+    margin: 0 0 0 5%;
+    padding: 25px 1%;
+    margin-bottom: 0;
+  }
+
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+
+  .title {
+    float: left;
+    font-size: 1.4em;
+  }
+
+  nav {
+    float: right;
+    width: 60%;
+  }
+
+  nav a {
+    padding: 15px 1%;
+  }
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  .main aside {
+    float: right;
+    width: 38%;
+  }
+  
+}
+
+@media only screen and (min-width: 1140px) {
+
+  .wrapper {
+    width: 1026px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  nav a {
+    padding: 25px 1%;
+  }
+  
+}
+
+
+/*************************
+Clearfix
+*************************/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
